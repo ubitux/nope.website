@@ -1,0 +1,8 @@
+<li class="list-item mb-4">
+  <div class="d-flex border-bottom mb-2" style="justify-content: space-between">
+    <h3 class="mb-0">{{ .Title }}</h3>
+    <time class="mb-0">{{ .Date | time.Format ":date_long" }}</time>
+  </div>
+  <article>{{ .Summary }}</article>
+  <a href="{{ .RelPermalink }}">Read more</a>
+</li>

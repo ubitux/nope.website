@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="container">
+  <h1 class="text-center">{{ .Title }}</h1>
+  <div class="text-end mb-4"><time>{{ .Date | time.Format ":date_long" }}</time></div>
+  <article>
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}

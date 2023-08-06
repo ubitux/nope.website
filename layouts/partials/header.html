@@ -1,0 +1,17 @@
+<nav class="navbar navbar-expand-md bg-black p-3 fs-5">
+  <div class="container-fluid">
+    <a href="{{ .Site.Home.RelPermalink }}" class="navbar-brand">
+      {{ with .Site.Params.site_logo }}
+      <img src="{{ relURL . }}" alt="{{ $.Site.Title }}" width="96" />
+      {{ end }}
+      <span class="fs-2">{{ .Site.Title }}</span>
+    </a>
+    {{ if .Site.Menus.main }}
+    <ul class="navbar-nav">
+      {{ range .Site.Menus.main }}
+      <li class="nav-item"><a class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
+      {{ end}}
+    </ul>
+    {{ end }}
+  </div>
+</nav>

@@ -1,0 +1,22 @@
+# XXX fixme
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'The Nope Foundry'
+
+[params]
+  discord = "https://discord.gg/Ssg64PRJBE"
+  # XXX rename nope-foundry (NopeFoundry?)
+  github = "https://github.com/nope-project"
+  # XXX something better?
+  email = "nope-foundry@gmail.com"
+
+  site_logo = '/img/logo.png'
+  # TODO
+  socials = [
+    { name = "GitHub",   url = "https://github.com/nope-foundry" },
+    { name = "Mastodon", url = "https://fosstodon.org/@NopeFoundry" },
+    { name = "Twitter",  url = "https://twitter.com/NopeFoundry" },
+    { name = "YouTube",  url = "https://www.youtube.com/@NopeFoundry" },
+    { name = "Discord",  url = "https://discord.gg/Ssg64PRJBE" },
+    { name = "RSS",      url = "/news/index.xml" },
+  ]

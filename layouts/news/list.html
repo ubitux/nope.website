@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article class="container">
+  <h1 class="text-center">
+    {{ .Title }}
+    <a href="index.xml">{{ "resources/icons/rss.svg" | readFile | safeHTML }}</a>
+  </h1>
+  <ul class="list-unstyled">
+  {{ range .Pages }}
+  {{- partial "news_preview.html" . -}}
+  {{ end }}
+  </ul>
+</article>
+{{ end }}
