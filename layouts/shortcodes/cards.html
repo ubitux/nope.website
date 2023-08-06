@@ -1,0 +1,15 @@
+{{ $name := (.Get "data") }}
+{{ $img_class := (.Get "img_class") }}
+{{ $data := index .Site.Data $name }}
+<div class="justify-content-center row row-cols-auto">
+  {{ range $data }}
+  <div class="card text-center col m-1 p-3 bg-black border-secondary" style="width: 16rem">
+    {{ with .img }}<img src="/img/{{ $name }}/{{ . }}" class="card-img-top{{ with $img_class }} {{ . }}{{ end }}"
+      alt="">{{ end }}
+    <div class="card-body">
+      <h3 class="card-title">{{.title}}</h3>
+      <p class="card-text">{{ .desc | markdownify }}</p>
+    </div>
+  </div>
+  {{ end }}
+</div>

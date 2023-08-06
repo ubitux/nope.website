@@ -1,0 +1,30 @@
+- title: Node based
+  img: graph-small.png
+  desc: Scales well with large graphs.
+- title: Python bindings
+  img: python-logo-only.png
+  desc: Complete Python binding for building scenes.
+- title: Text effects
+  img: texteffects.gif
+  desc: Support for advanced text effects such as blurring or glowing.
+- title: Animations
+  img: anim.gif
+  desc: All commonly known easings supported for animating anything.
+- title: Cross platform
+  img: devices.jpg
+  desc: Runs on all major platforms, including mobile (iOS and Android).
+- title: Multi backends
+  img: gfx-backends.png
+  desc: OpenGL, OpenGLES, Vulkan and Metal (through MoltenVK) are supported.
+- title: Video acceleration
+  img: cinema-strip.jpg
+  desc: Video acceleration for Android, iOS, MacOS, Linux (VAAPI).
+- title: Automation
+  img: automation.jpg
+  desc: Compose the same scene with different contents thanks to the simple API.
+- title: Development environment
+  img: code.jpg
+  desc: Support for live editing, multiple backend targets, automatic control widgets, ...
+- title: Diff tool
+  img: ngl-diff.gif
+  desc: A tool to Compare images or videos.

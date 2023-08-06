@@ -1,0 +1,20 @@
+{{ if .Site.Params.socials }}
+<div class="bg-black p-3 text-center">
+  <ul class="list-unstyled list-inline">
+    {{ range .Site.Params.socials }}
+    <li class="list-inline-item">
+      {{- /* Icons found on https://icons.getbootstrap.com/ */ -}}
+      {{ printf "resources/icons/%s.svg" (.name | lower) | readFile | safeHTML }}
+      <a href="{{ .url }}" title="{{ .name }}" target="_blank"{{ if eq .name "Mastodon" }} rel="me"{{ end }}>{{ .name }}</a>
+    </li>
+    {{ end }}
+    <li class="list-inline-item">
+      {{ "resources/icons/mail.svg" | readFile | safeHTML }}
+      <a href="/contact" title="Contact">Contact</a>
+    </li>
+  </ul>
+</div>
+{{ end }}
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
