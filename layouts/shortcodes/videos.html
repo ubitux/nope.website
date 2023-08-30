@@ -3,7 +3,7 @@
 <div class="row row-cols-auto">
   {{ range $data }}
   <div class="col">
-    <iframe src="https://youtube.com//embed/{{ . }}?autoplay=1&loop=1" allowfullscreen></iframe>
+    <iframe src="https://youtube.com//embed/{{ . }}?autoplay=1&mute=1&loop=1&playlist={{ . }}&controls=0" allowfullscreen></iframe>
   </div>
   {{ end }}
 </div>
