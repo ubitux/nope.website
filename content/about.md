@@ -4,7 +4,7 @@ menu: "main"
 weight: 40
 ---
 
-The Nope Foundry is current developped and maintained by [Clément
+The Nope Foundry project is current developped and maintained by [Clément
 Bœsch][cboesch] and [Matthieu Bouron][mbouron].
 
 {{< cards data="team" img_class="rounded-circle" >}}

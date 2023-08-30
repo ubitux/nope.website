@@ -1,7 +1,7 @@
 # XXX fixme
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'The Nope Foundry'
+title = 'Nope Foundry'
 
 [params]
   discord = "https://discord.gg/Ssg64PRJBE"
