@@ -1,17 +1,14 @@
-<nav class="navbar navbar-expand-md bg-black p-3 fs-5">
-  <div class="container-fluid">
-    <a href="{{ .Site.Home.RelPermalink }}" class="navbar-brand">
-      {{ with .Site.Params.site_logo }}
-      <img src="{{ relURL . }}" alt="{{ $.Site.Title }}" width="96" />
-      {{ end }}
-      <span class="fs-2">{{ .Site.Title }}</span>
-    </a>
-    {{ if .Site.Menus.main }}
-    <ul class="navbar-nav">
-      {{ range .Site.Menus.main }}
-      <li class="nav-item"><a class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
-      {{ end}}
-    </ul>
+<header class="container d-flex flex-wrap justify-content-center py-3 border-bottom">
+  <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none" href="{{ .Site.Home.RelPermalink }}">
+    {{ with .Site.Params.site_logo }}
+    <img src="{{ relURL . }}" alt="{{ $.Site.Title }}" width="64" class="mx-2"/>
     {{ end }}
-  </div>
-</nav>
+    <span class="fw-bolder">{{ .Site.Title }}</span>
+  </a>
+
+  <ul class="nav nav-pills align-items-center">
+    {{ range .Site.Menus.main }}
+    <li class="nav-item"><a class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end}}
+  </ul>
+</header>

@@ -9,7 +9,7 @@ Bœsch][cboesch] and [Matthieu Bouron][mbouron]. Both of them have a long experi
 with multimedia: former FFmpeg developers, they worked in the broadcasting
 industry, general consumer video production and graphics technologies.
 
-{{< cards data="team" img_class="rounded-circle" >}}
+{{< members data="team" img_class="rounded-circle" >}}
 
 While the project is free and open-source, we welcome sponsoring to help us
 continue to work on it. Please check the [Contribute]({{< ref "/contribute" >}})
