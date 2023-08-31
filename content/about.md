@@ -7,7 +7,7 @@ weight: 40
 The Nope Foundry project is current developped and maintained by [Clément
 Bœsch][cboesch] and [Matthieu Bouron][mbouron].
 
-{{< cards data="team" img_class="rounded-circle" >}}
+{{< members data="team" img_class="rounded-circle" >}}
 
 While the project is free and open-source, we welcome sponsoring to help us
 continue to work on it. Please check the [Contribute]({{< ref "/contribute" >}})

@@ -1,20 +1,39 @@
 {{ if .Site.Params.socials }}
-<div class="bg-black p-3 text-center">
-  <ul class="list-unstyled list-inline">
-    {{ range .Site.Params.socials }}
-    <li class="list-inline-item">
-      {{- /* Icons found on https://icons.getbootstrap.com/ */ -}}
-      {{ printf "resources/icons/%s.svg" (.name | lower) | readFile | safeHTML }}
-      <a href="{{ .url }}" title="{{ .name }}" target="_blank">{{ .name }}</a>
-    </li>
-    {{ end }}
-    <li class="list-inline-item">
-      {{ "resources/icons/mail.svg" | readFile | safeHTML }}
-      <a href="/contact" title="Contact">Contact</a>
-    </li>
-  </ul>
-</div>
-{{ end }}
+  <footer class="pt-5 border-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1">&nbsp;</div>
+        <div class="col-md-2">
+          <a href="{{ .Site.Home.RelPermalink }}">
+            {{ with .Site.Params.site_logo }}
+            <img src="{{ relURL . }}" alt="{{ $.Site.Title }}" width="96" />
+            {{ end }}
+            <br>
+            {{ .Site.Title }}
+          </a>
+          <small class="d-block mb-3 text-body-secondary">© 1515–2023</small>
+        </div>
+        <div class="col-md-8">
+          <h5>Follow Nope Foundry</h5>
+          <ul class="list-unstyled text-small">
+            {{ range .Site.Params.socials }}
+            <li class="list-inline-item">
+              {{- /* Icons found on https://icons.getbootstrap.com/ */ -}}
+              {{ printf "resources/icons/%s.svg" (.name | lower) | readFile | safeHTML }}
+              <a href="{{ .url }}" title="{{ .name }}" target="_blank">{{ .name }}</a>
+            </li>
+            {{ end }}
+            <li class="list-inline-item">
+              {{ "resources/icons/mail.svg" | readFile | safeHTML }}
+              <a href="/contact" title="Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-1">&nbsp;</div>
+      </div>
+    </div>
+  </footer>
+  {{ end }}
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
-  integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
